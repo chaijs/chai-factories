@@ -1,0 +1,22 @@
+{
+  "author": "Veselin Todorov <hi@vesln.com>",
+  "name": "chai-factories",
+  "description": "Factories over fixtures. Build for the Chai Assertion Library",
+  "version": "0.1.0",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/chaijs/chai-factories.git"
+  },
+  "main": "./lib/factories",
+  "scripts": {
+    "test": "make test"
+  },
+  "devDependencies": {
+    "mocha": "*",
+    "chai": "*",
+    "folio": "0.2.x"
+  },
+  "engines": {
+    "node": "*"
+  }
+}
