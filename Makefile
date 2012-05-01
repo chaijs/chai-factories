@@ -5,7 +5,7 @@ all: clean
 	@node support/compile.js
 
 clean:
-	@rm chai-null.js
+	@rm chai-factories.js
 
 test:
 	@NODE_ENV=test ./node_modules/.bin/mocha \

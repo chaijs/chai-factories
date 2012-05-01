@@ -81,6 +81,6 @@ var prefix = fs.readFileSync(join(__dirname, 'browser', 'prefix.js'), 'utf8')
 
 applicationJs.compile(function (err, src) {
   var content = prefix + src + suffix;
-  fs.writeFileSync(join(__dirname, '..', 'chai-null.js'), content, 'utf8');
-  console.log('completed: chai-null.js');
+  fs.writeFileSync(join(__dirname, '..', 'chai-factories.js'), content, 'utf8');
+  console.log('completed: chai-factories.js');
 });

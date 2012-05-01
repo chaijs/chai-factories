@@ -1,4 +1,4 @@
-  return require('null');
+  return require('factories');
 });
 
-chai.use(chai_null);
+chai.use(chai_factories);
