@@ -12,7 +12,7 @@ Chai Factories is a simple straightforward factory builder for your awesome test
 
 #### Browser
 
-Include `chai-factories.js` after including `chai.js`. 
+Include `chai-factories.js` after including `chai.js`.
 
 ```html
 <script src="chai-factories.js"></script>
@@ -50,15 +50,14 @@ chai.factory('cat', { name: 'Boo' });
 #### Build from factory
 
 ```js
-var user = chai.factory('person');
-console.log(user);
+var user = chai.create('person');
 ```
 
 #### Overwrite property
 
 ```js
 chai.factory('cat', { cute: true, age: 4 });
-var cat = chai.factory('cat', { cute: false });
+var cat = chai.create('cat', { cute: false });
 ```
 
 #### Extend a factory
@@ -66,6 +65,7 @@ var cat = chai.factory('cat', { cute: false });
 ```js
 var cat = chai.factory('cat', { cute: true, age: 4 });
 chai.factory('tiger', cat.extend({ scary: true }));
+var tiger = chai.create('tiger');
 ```
 
 ## Tests
