@@ -13,7 +13,7 @@
 if (!chai) {
   var chai = require('chai');
   chai.use(require('..'));
-};
+}
 
 /**
  * Support.
@@ -27,12 +27,12 @@ describe('Chai Factories', function() {
   });
 
   it('can register a factory', function() {
-    chai.factory('user', { foo: 3, bar: true, });
-    chai.create('user').should.eql({ foo: 3, bar: true});
+    chai.factory('user', { foo: 3, bar: true });
+    chai.create('user').should.eql({ foo: 3, bar: true });
   });
 
   it('can create independant factories', function() {
-    chai.factory('user', { foo: 3, bar: true, });
+    chai.factory('user', { foo: 3, bar: true });
 
     var first = chai.create('user');
     var second = chai.create('user');
@@ -42,8 +42,8 @@ describe('Chai Factories', function() {
   });
 
   it('can overwrite properties when creating factories', function() {
-    chai.factory('user', { foo: 3, bar: true, });
-    chai.create('user', { foo: 4 }).should.eql({ foo: 4, bar: true});
+    chai.factory('user', { foo: 3, bar: true });
+    chai.create('user', { foo: 4 }).should.eql({ foo: 4, bar: true });
   });
 
   it('throws an error if requested factory is not registered', function() {
@@ -54,10 +54,10 @@ describe('Chai Factories', function() {
 
   describe('Factory', function() {
     it('is extendable', function() {
-      var factory = chai.factory('user', { foo: 3, bar: true, });
-      chai.factory('admin', factory.extend({ bar: false}));
+      var factory = chai.factory('user', { foo: 3, bar: true });
+      chai.factory('admin', factory.extend({ bar: false }));
 
-      chai.create('admin').should.eql({ foo: 3, bar: false});
+      chai.create('admin').should.eql({ foo: 3, bar: false });
     });
   });
 });
