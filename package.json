@@ -1,6 +1,7 @@
 {
   "author": "Veselin Todorov <hi@vesln.com>",
   "name": "chai-factories",
+  "keywords": ["chai", "chai-plugin", "browser", "object-constructors", "factories"],
   "description": "Factories over fixtures. Build for the Chai Assertion Library",
   "version": "0.1.0",
   "repository": {
