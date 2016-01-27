@@ -12,7 +12,7 @@
     "test": "make test"
   },
   "devDependencies": {
-    "mocha": "*",
+    "mocha": "2.4.4",
     "chai": "*",
     "folio": "0.2.x"
   },
