@@ -13,7 +13,7 @@
   },
   "devDependencies": {
     "mocha": "*",
-    "chai": "*",
+    "chai": "3.5.0",
     "folio": "0.2.x"
   },
   "engines": {
