@@ -17,6 +17,6 @@
     "folio": "0.2.x"
   },
   "engines": {
-    "node": "*"
+    "node": ">= 4"
   }
 }
